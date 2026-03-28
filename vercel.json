@@ -2,11 +2,7 @@
   "crons": [
     {
       "path": "/api/cron/process-events",
-      "schedule": "* * * * *"
-    },
-    {
-      "path": "/api/cron/review-requests",
-      "schedule": "0 * * * *"
+      "schedule": "0 0 * * *"
     },
     {
       "path": "/api/cron/follow-up-emails",
