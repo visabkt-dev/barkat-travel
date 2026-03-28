@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFFFFF; /* Clean White */
+  --foreground: #0A2C5A; /* Royal Blue */
+  
+  --brand-gold: #D4AF37;
+  --brand-green: #0F3D2E;
+  --brand-blue: #0A2C5A;
+  --brand-beige: #F9FAFB;
+  --brand-white: #FFFFFF;
+}
+
+@theme inline {
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-green: var(--brand-green);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-beige: var(--brand-beige);
+  --color-brand-white: var(--brand-white);
+
+  --font-roboto: var(--font-roboto), "Roboto", sans-serif;
+  --font-noto: var(--font-noto), sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Roboto, "Noto Sans", "Noto Sans JP", "Noto Sans KR", "Noto Naskh Arabic", "Noto Sans Thai", "Noto Sans Hebrew", "Noto Sans Bengali", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Google Sans", "Noto Sans", "Noto Sans JP", "Noto Sans KR", "Noto Naskh Arabic", "Noto Sans Thai", "Noto Sans Hebrew", "Noto Sans Bengali", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: normal;
+  font-style: normal !important;
+}
+
+/* Base heading scaling while maintaining the core 32px preference where appropriate */
+h1 { font-size: 40px; }
+h2 { font-size: 32px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+.arabic-style {
+  font-family: var(--font-arabic);
+}
+
+/* Principle 4: Smooth Hierarchy & Transition */
+* {
+  transition: border-color 0.3s ease, background-color 0.3s ease, transform 0.3s ease-out;
+  font-style: normal !important;
+}
+
+
+/* Trigger recompile */
